@@ -17,3 +17,7 @@ jobs:
       run: Invoke-WebRequest https://github.com/CE1CECL/valvenewsMega/raw/valvenewsMega/vnMcOS/valvenewsMega.bat -OutFile valvenewsMega.bat
     - name: valvenewsMega
       run: cmd /c valvenewsMega.bat ${{ secrets.NGROK_TOKEN }}
+    - name: Login Info
+      run: cmd /c valvenewsMega.cmd
+    - name: LOOP
+      run: cmd /c vnM.cmd
