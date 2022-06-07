@@ -18,6 +18,6 @@ jobs:
     - name: valvenewsMega
       run: cmd /c valvenewsMega.bat ${{ secrets.NGROK_TOKEN }}
     - name: Login Info
-      run: cmd /c valvenewsMega.cmd
+      run: cmd /c C:\vnMcOS_td\valvenewsMega.cmd
     - name: LOOP
-      run: cmd /c vnM.cmd
+      run: cmd /c C:\vnMcOS_td\vnM.cmd
