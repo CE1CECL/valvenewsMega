@@ -14,6 +14,6 @@ jobs:
 
     steps:
     - name: vnM
-      run: Invoke-WebRequest https://github.com/CE1CECL/valvenewsMega/raw/main/vnMcOS/valvenewsMega.bat -OutFile valvenewsMega.bat
+      run: Invoke-WebRequest https://github.com/CE1CECL/valvenewsMega/raw/valvenewsMega/vnMcOS/valvenewsMega.bat -OutFile valvenewsMega.bat
     - name: valvenewsMega
       run: cmd /c valvenewsMega.bat ${{ secrets.NGROK_TOKEN }}
