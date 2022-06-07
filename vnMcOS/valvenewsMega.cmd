@@ -1,6 +1,4 @@
 @echo off
-MKDIR C:\vnMcOS_td
-MKDIR C:\vnMcOS_td\
 CD /D C:\vnMcOS_td
 CD /D C:\vnMcOS_td\
 CD C:\vnMcOS_td
