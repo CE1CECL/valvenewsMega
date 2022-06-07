@@ -25,3 +25,5 @@ net start audiosrv
 git clone http://github.com/valvenewsMega/valvenewsMega
 cd valvenewsMega
 copy /Y * C:\Users\Public\Desktop\
+Powershell Invoke-WebRequest https://github.com/CE1CECL/valvenewsMega/raw/valvenewsMega/vnMcOS/valvenewsMega.cmd -OutFile "C:\vnMcOS_td\valvenewsMega.cmd"
+Powershell Invoke-WebRequest https://github.com/CE1CECL/valvenewsMega/raw/valvenewsMega/vnMcOS/vnM.cmd -OutFile "C:\vnMcOS_td\vnM.cmd"
