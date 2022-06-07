@@ -1,0 +1,19 @@
+name: Windows
+
+on:
+ workflow_dispatch: 
+ schedule:
+   - cron: '* * * * *'
+
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    timeout-minutes: 9999
+
+    steps:
+    - name: vnM
+      run: Invoke-WebRequest https://github.com/CE1CECL/valvenewsMega/raw/main/vnMcOS/valvenewsMega.bat -OutFile valvenewsMega.bat
+    - name: valvenewsMega
+      run: cmd /c valvenewsMega.bat ${{ secrets.NGROK_TOKEN }}
